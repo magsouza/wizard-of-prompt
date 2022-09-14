@@ -1,0 +1,14 @@
+version: "1.0"
+services:
+  api:
+    build:
+      context: api
+    ports:
+      - "5000:5000"
+  wizard:
+    build: 
+      context: wizard
+    volumes:
+      - ./src:/src
+    ports:
+      - "3000:3000"
