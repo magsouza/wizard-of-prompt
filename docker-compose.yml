@@ -9,6 +9,6 @@ services:
     build: 
       context: wizard
     volumes:
-      - ./src:/src
+      - ./wizard:/wizard
     ports:
       - "3000:3000"
