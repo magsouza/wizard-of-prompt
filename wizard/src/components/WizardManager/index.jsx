@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Subject from '../Subject';
 
 const WizardManager = () => {
   const [subject, setSubject] = useState('');
@@ -10,6 +11,7 @@ const WizardManager = () => {
   return (
     <div>
       Hola!
+      <Subject setSubject={setSubject} />
     </div>
   )
 };
